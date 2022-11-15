@@ -13,6 +13,10 @@ import NavBar from '../../components/NavBar/NavBar'
 
 export default function App() {
   const [user, setUser] = useState(null)
+
+  const login = (name) => {
+      setUser(name)
+  }
   return (
     <main className="App">
       {
@@ -26,7 +30,7 @@ export default function App() {
           </Routes>
         </>
         :
-        <LoginPage/>
+        <LoginPage login={login}/>
       }
     </main>
   );
