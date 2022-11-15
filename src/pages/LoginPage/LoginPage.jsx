@@ -25,7 +25,7 @@ export default function LoginPage({login}) {
                 required
                 autoComplete="off"
             />
-            <button type="submit">Submit</button>
+            <button className="" type="submit">Submit</button>
         </form>
       </main>
     );

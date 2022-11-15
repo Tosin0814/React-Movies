@@ -11,8 +11,13 @@ import MovieListPage from '../MoviesListPage/MoviesListPage';
 // Components
 import NavBar from '../../components/NavBar/NavBar'
 
+// Data
+import { movies } from '../../data';
+
 export default function App() {
   const [user, setUser] = useState(null)
+  const [movieList, setMovieList] = useState(movies)
+  // console.log(movieList)
 
   const login = (name) => {
       setUser(name)
@@ -24,7 +29,7 @@ export default function App() {
         <>
           <NavBar/>
           <Routes>
-            <Route path="/" element={<MovieListPage />} />
+            <Route path="/" element={<MovieListPage movieList={movieList}/>} />
             <Route path='/movies/:movieName' element={<MovieDetailPage/>} /> 
             <Route path="/actors" element={<ActorListPage />} />
           </Routes>

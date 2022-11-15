@@ -1,0 +1,9 @@
+.MovieCard>img{
+    width: 18rem;
+}
+
+.title{
+    width: 14rem;
+    height: 3rem;
+    margin: 0 auto;
+}
