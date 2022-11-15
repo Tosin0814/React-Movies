@@ -1,3 +1,7 @@
+.MovieCard {
+    margin: 2rem;
+}
+
 .MovieCard>img{
     width: 18rem;
 }
@@ -6,4 +10,9 @@
     width: 14rem;
     height: 3rem;
     margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
