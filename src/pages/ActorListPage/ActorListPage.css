@@ -1,0 +1,11 @@
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.ActorListPage {
+  margin: 10px;
+}

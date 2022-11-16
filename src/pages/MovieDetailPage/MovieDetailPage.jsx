@@ -7,7 +7,7 @@ export default function MovieDetailPage({movies}) {
     const currentMovie = movies.filter((movie) => {
         return movie.title.includes(movieParams.movieName)
     })
-    console.log(currentMovie)
+    // console.log(currentMovie)
 
     return (
       <main className="MovieDetailPage">
@@ -20,7 +20,7 @@ export default function MovieDetailPage({movies}) {
             <div className="movie-info col">
                 <h3></h3>
                 <p><strong>Release Date: </strong>{currentMovie[0].releaseDate}</p>
-                <p><strong>Cast: </strong></p>
+                <p><strong>Cast: </strong>{currentMovie[0].cast.join(", ")}</p>
             </div>
         </div>
         

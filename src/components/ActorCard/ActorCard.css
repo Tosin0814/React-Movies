@@ -1,0 +1,11 @@
+.ActorCard {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+
+.actor-card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

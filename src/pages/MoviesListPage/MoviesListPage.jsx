@@ -5,7 +5,7 @@ export default function MovieListPage({movieList}) {
   // console.log("movie list",movieList)
     return (
       <main className="MovieListPage">
-        <h1>Movie List Page</h1>
+        <h1>Movie List</h1>
         <div className="flex-container">
           {movieList &&
             movieList.map((movie,idx) => (

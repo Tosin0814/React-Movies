@@ -22,6 +22,17 @@ export default function App() {
   const login = (name) => {
       setUser(name)
   }
+
+  const actorList = []
+
+  movieList.map(movie => {
+    return (movie.cast.forEach(cast => {
+      return actorList.push(cast)
+    }))
+  })
+  const uniqueActorList = Array.from(new Set(actorList))
+  // console.log("Actor List", actorList)
+  // console.log("Unique Actor List", uniqueActorList)
   return (
     <main className="App">
       {
@@ -31,7 +42,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<MovieListPage movieList={movieList}/>} />
             <Route path='/movies/:movieName' element={<MovieDetailPage movies={movieList}/>} /> 
-            <Route path="/actors" element={<ActorListPage />} />
+            <Route path="/actors" element={<ActorListPage actorList={uniqueActorList}/>} />
           </Routes>
         </>
         :

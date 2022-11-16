@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import './MovieCard.css'
 
 export default function MovieCard({index, movie}) {
-    console.log('moviecard',index, movie)
+    // console.log('moviecard',index, movie)
     return(
         <Link to={`/movies/${movie.title}`}>
             <div className='MovieCard card'>
